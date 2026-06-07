@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+ <head>
+  <meta charset="utf-8"/>
+  <link href="https://media.base44.com/images/public/6a254c76c810273b89631d3a/32d729e88_logo.png" rel="icon" type="image/svg+xml"/>
+  <meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+  <link href="/manifest.json" rel="manifest"/>
+  <title>
+   ClarityFlow
+  </title>
+  <script crossorigin="" src="/assets/index-BknEcZ3q.js" type="module">
+  </script>
+  <link crossorigin="" href="/assets/index-ClNtCxrq.css" rel="stylesheet"/>
+  <script type="module">
+   if (window.self === window.top) {
+  let lastPath = "";
+  function getPageNameFromPath(path) {
+    const segments = path.split("/").filter(Boolean);
+    return segments[0] || null;
+  }
+  function trackPageView() {
+    const path = window.location.pathname;
+    if (path === lastPath) return;
+    lastPath = path;
+    const pageName = getPageNameFromPath(path) || "home";
+    const appId = "6a254c76c810273b89631d3a";
+    if (!appId) return;
+    fetch(`/api/app-logs/${appId}/log-user-in-app/${pageName}`, {
+      method: "POST",
+    }).catch(() => {});
+  }
+  const originalPushState = history.pushState.bind(history);
+  history.pushState = function (...args) {
+    originalPushState(...args);
+    trackPageView();
+  };
+  const originalReplaceState = history.replaceState.bind(history);
+  history.replaceState = function (...args) {
+    originalReplaceState(...args);
+    trackPageView();
+  };
+  window.addEventListener("popstate", trackPageView);
+  trackPageView();
+}
+  </script>
+  <meta content="An intelligent requirement-tracking platform that identifies ambiguity and conflicts in project inputs, helping teams streamline communication through automated clarification workflows and assumption documentation." name="description"/>
+  <meta content="ClarityFlow" property="og:title"/>
+  <meta content="An intelligent requirement-tracking platform that identifies ambiguity and conflicts in project inputs, helping teams streamline communication through automated clarification workflows and assumption documentation." property="og:description"/>
+  <meta content="https://vigilant-clarity-flow-fix.base44.app" property="og:url"/>
+  <meta content="website" property="og:type"/>
+  <meta content="ClarityFlow" property="og:site_name"/>
+  <meta content="ClarityFlow" name="twitter:title"/>
+  <meta content="An intelligent requirement-tracking platform that identifies ambiguity and conflicts in project inputs, helping teams streamline communication through automated clarification workflows and assumption documentation." name="twitter:description"/>
+  <meta content="summary_large_image" name="twitter:card"/>
+  <meta content="https://vigilant-clarity-flow-fix.base44.app" name="twitter:url"/>
+  <meta content="https://media.base44.com/images/public/6a254c76c810273b89631d3a/32d729e88_logo.png/v1/fill/w_1200,h_630/32d729e88_logo.png" property="og:image"/>
+  <meta content="https://media.base44.com/images/public/6a254c76c810273b89631d3a/32d729e88_logo.png/v1/fill/w_1200,h_630/32d729e88_logo.png" name="twitter:image"/>
+  <meta content="yes" name="mobile-web-app-capable"/>
+  <meta content="black" name="apple-mobile-web-app-status-bar-style"/>
+  <meta content="ClarityFlow" name="apple-mobile-web-app-title"/>
+  <link href="https://vigilant-clarity-flow-fix.base44.app" rel="canonical"/>
+  <script data-seo-source="builder" type="application/ld+json">
+   {"name": "ClarityFlow", "@context": "https://schema.org", "@type": "WebSite", "url": "https://vigilant-clarity-flow-fix.base44.app"}
+  </script>
+  <script data-seo-source="builder" type="application/ld+json">
+   {"name": "ClarityFlow", "logo": "https://media.base44.com/images/public/6a254c76c810273b89631d3a/32d729e88_logo.png", "@context": "https://schema.org", "@type": "Organization", "url": "https://vigilant-clarity-flow-fix.base44.app"}
+  </script>
+  <script async="true" data-app-id="6a254c76c810273b89631d3a" data-platform-url="https://app.base44.com" src="/static/js/badge.js">
+  </script>
+ </head>
+ <body>
+  <div id="root">
+   <div data-seo-source="builder" id="seo-snapshot" style="position:absolute;width:1px;height:1px;padding:0;margin:-1px;overflow:hidden;clip:rect(0,0,0,0);white-space:nowrap;border:0;">
+    <h1>
+     ClarityFlow
+    </h1>
+    <p>
+     An intelligent requirement-tracking platform that identifies ambiguity and conflicts in project inputs, helping teams streamline communication through automated clarification workflows and assumption documentation.
+    </p>
+    <nav aria-label="Pages">
+     <h2>
+      Pages
+     </h2>
+     <ul>
+      <li>
+       <a href="/login">
+        Login
+       </a>
+      </li>
+      <li>
+       <a href="/register">
+        Register
+       </a>
+      </li>
+      <li>
+       <a href="/forgot-password">
+        Forgot Password
+       </a>
+      </li>
+      <li>
+       <a href="/reset-password">
+        Reset Password
+       </a>
+      </li>
+      <li>
+       <a href="/new">
+        New Analysis
+       </a>
+      </li>
+      <li>
+       <a href="/CaseDetail">
+        Case Detail
+       </a>
+      </li>
+      <li>
+       <a href="/archive">
+        Archive Page
+       </a>
+      </li>
+     </ul>
+    </nav>
+   </div>
+  </div>
+ </body>
+</html>
